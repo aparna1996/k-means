@@ -10,7 +10,9 @@ def distance(a,b):
 	return math.sqrt(sum)
 
 def mean_array(data):
-	return [float(sum(l))/len(l) for l in zip(*data)]	
+	'''Caclulate the mean for each dimension of a 2-d array'''
+	return [float(sum(l))/len(l) for l in zip(*data)]
+
 def calculate_cluster(mean, data):
 	'''Given mean and the data array, returns an array sorting the data points into clusters'''
 	cluster=[]
