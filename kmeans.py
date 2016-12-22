@@ -46,10 +46,8 @@ old_mean = [0]*k
 while(mean != old_mean):
 	old_mean = mean[:]
 	cluster = calculate_cluster(old_mean,data)
-	print cluster
 	for i in range(len(cluster)):
 		mean[i] = mean_array(cluster[i])
-	print old_mean, mean
 
 #calculate final clusters
 f = open('clusters.txt', 'w')
